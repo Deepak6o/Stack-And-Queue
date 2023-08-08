@@ -1,3 +1,35 @@
+Brute force solution
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     int arr[n];
+//     int maxarea=0;
+//     for(int i=0;i<n;i++)
+//     {
+//         cin>>arr[i];
+//     }
+//     for(int i=0;i<n;i++)
+//     {
+//         for(int j=i;j<n;j++)
+//         {
+//             int minheight=1000001;
+//             for(int k=i;k<=j;k++)
+//             {
+//                 minheight=min(minheight,arr[k]);
+//             }
+//             maxarea=max(maxarea,minheight*(j-i+1));
+
+//         }
+//     }
+//     cout<< maxarea;
+// }
+
+
 class Solution{
   public:
    vector<int> nextSmallerElement(int *arr,int n)
